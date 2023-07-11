@@ -1,0 +1,4 @@
+/node_modules
+/uploads/*
+!/uploads/no_image.jpg
+.vscode
