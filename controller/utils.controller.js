@@ -3,6 +3,7 @@ const db = require('../db')
 const {v4: uuid4} = require("uuid")
 const nodemailer = require('nodemailer');
 
+const URL = 'http://homecity32:3000'
 
 const DADATA_KEY = 'Token ab2e74c24c054083402b19eb25de8c9fe597c92a'
 
@@ -92,7 +93,7 @@ class UtilsController  {
                     "capture": true,
                     "confirmation": {
                         "type": "redirect",
-                        "return_url": "http://localhost:3000/profile"
+                        "return_url": `${URL}/profile`
                     },
                     "description": `Пополнение счета ${req.cookies.email}`
                 },

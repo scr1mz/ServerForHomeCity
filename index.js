@@ -11,6 +11,8 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 app.use(cors({
     origin: [
+        "http://homecity32:3000",
+        "http://homecity32:8080",
         "http://HomeCity:3000",
         "http://HomeCity:8080",
         "http://localhost:3000",
